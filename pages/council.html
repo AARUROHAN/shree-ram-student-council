@@ -1,0 +1,1764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Student Council | The Shriram Millennium School">
+
+    <title>
+        Student Council | The Shriram Millennium School
+    </title>
+
+
+    <!-- GOOGLE FONTS -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- MAIN CSS -->
+
+    <link
+        rel="stylesheet"
+        href="../style.css">
+
+
+    <style>
+
+        /* =====================================================
+           COUNCIL PAGE
+        ===================================================== */
+
+        .council-page {
+
+            width: 94%;
+
+            max-width: 1450px;
+
+            margin: auto;
+
+            padding-bottom: 110px;
+
+        }
+
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .council-hero {
+
+            padding: 95px 0 65px;
+
+            max-width: 850px;
+
+        }
+
+
+        .council-hero h1 {
+
+            margin-top: 14px;
+
+            font-family:
+                "Playfair Display",
+                serif;
+
+            font-size:
+                clamp(55px, 6vw, 84px);
+
+            line-height: 0.98;
+
+            letter-spacing: -4px;
+
+        }
+
+
+        .council-hero h1 span {
+
+            color: var(--blue);
+
+            font-style: italic;
+
+        }
+
+
+        .council-hero p {
+
+            max-width: 650px;
+
+            margin-top: 25px;
+
+            color: var(--muted);
+
+            font-size: 15px;
+
+            line-height: 1.8;
+
+        }
+
+
+        /* =====================================================
+           SECTION HEADING
+        ===================================================== */
+
+        .council-section {
+
+            margin-top: 20px;
+
+        }
+
+
+        .council-section-heading {
+
+            display: flex;
+
+            align-items: flex-end;
+
+            justify-content: space-between;
+
+            margin-bottom: 22px;
+
+        }
+
+
+        .council-section-heading h2 {
+
+            margin-top: 7px;
+
+            font-size: 25px;
+
+        }
+
+
+        .council-year {
+
+            padding: 8px 13px;
+
+            border:
+                1px solid
+                rgba(8,124,255,0.4);
+
+            border-radius: 7px;
+
+            color: var(--blue-light);
+
+            font-size: 9px;
+
+            font-weight: 700;
+
+            letter-spacing: 1px;
+
+        }
+
+
+        /* =====================================================
+           TOP LEADERS
+        ===================================================== */
+
+        .top-leaders {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 15px;
+
+        }
+
+
+        .leader-card {
+
+            min-height: 360px;
+
+            position: relative;
+
+            overflow: hidden;
+
+            padding: 25px;
+
+            display: grid;
+
+            grid-template-columns:
+                190px 1fr;
+
+            gap: 25px;
+
+            align-items: center;
+
+            border:
+                1px solid
+                rgba(255,255,255,0.12);
+
+            border-radius: 14px;
+
+            background:
+
+                radial-gradient(
+                    circle at 15% 15%,
+                    rgba(8,124,255,0.10),
+                    transparent 35%
+                ),
+
+                #080809;
+
+        }
+
+
+        .leader-photo {
+
+            width: 180px;
+
+            height: 250px;
+
+            overflow: hidden;
+
+            border-radius: 10px;
+
+            border:
+                1px solid
+                rgba(255,255,255,0.12);
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #151519,
+                    #080808
+                );
+
+            display: grid;
+
+            place-items: center;
+
+            color: #555;
+
+            font-size: 10px;
+
+        }
+
+
+        .leader-photo img {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+        }
+
+
+        .leader-info small {
+
+            color: var(--blue);
+
+            font-size: 8px;
+
+            font-weight: 700;
+
+            letter-spacing: 2px;
+
+        }
+
+
+        .leader-info h3 {
+
+            margin-top: 10px;
+
+            font-family:
+                "Playfair Display",
+                serif;
+
+            font-size: 35px;
+
+            line-height: 1.05;
+
+        }
+
+
+        .leader-info p {
+
+            margin-top: 12px;
+
+            color: #77777e;
+
+            font-size: 10px;
+
+            line-height: 1.7;
+
+        }
+
+
+        .leader-role {
+
+            display: inline-flex;
+
+            margin-top: 20px;
+
+            padding: 8px 12px;
+
+            border-radius: 6px;
+
+            background:
+                rgba(8,124,255,0.10);
+
+            color: #75b8ff;
+
+            font-size: 9px;
+
+            font-weight: 700;
+
+        }
+
+
+        /* =====================================================
+           COUNCIL MEMBERS
+        ===================================================== */
+
+        .members-section {
+
+            margin-top: 80px;
+
+        }
+
+
+        .members-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 12px;
+
+        }
+
+
+        .member-card {
+
+            overflow: hidden;
+
+            border:
+                1px solid
+                rgba(255,255,255,0.1);
+
+            border-radius: 11px;
+
+            background: #080808;
+
+            transition:
+                transform 0.25s ease,
+                border-color 0.25s ease;
+
+        }
+
+
+        .member-card:hover {
+
+            transform:
+                translateY(-5px);
+
+            border-color:
+                rgba(8,124,255,0.4);
+
+        }
+
+
+        .member-photo {
+
+            height: 220px;
+
+            display: grid;
+
+            place-items: center;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #151519,
+                    #080808
+                );
+
+            color: #555;
+
+            font-size: 9px;
+
+        }
+
+
+        .member-photo img {
+
+            width: 100%;
+
+            height: 100%;
+
+            object-fit: cover;
+
+        }
+
+
+        .member-info {
+
+            padding: 17px;
+
+        }
+
+
+        .member-info small {
+
+            color: var(--blue);
+
+            font-size: 7px;
+
+            font-weight: 700;
+
+            letter-spacing: 1.5px;
+
+        }
+
+
+        .member-info h3 {
+
+            margin-top: 7px;
+
+            font-size: 15px;
+
+        }
+
+
+        .member-info p {
+
+            margin-top: 5px;
+
+            color: #66666d;
+
+            font-size: 9px;
+
+        }
+
+
+        /* =====================================================
+           HOUSE CAPTAINS
+        ===================================================== */
+
+        .captains-section {
+
+            margin-top: 85px;
+
+        }
+
+
+        .captains-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 12px;
+
+        }
+
+
+        .captain-card {
+
+            min-height: 260px;
+
+            padding: 20px;
+
+            border:
+                1px solid;
+
+            border-radius: 11px;
+
+            background: #080808;
+
+        }
+
+
+        .captain-number {
+
+            color: #555;
+
+            font-size: 9px;
+
+            font-weight: 700;
+
+        }
+
+
+        .captain-icon {
+
+            width: 52px;
+
+            height: 52px;
+
+            margin-top: 25px;
+
+            border-radius: 50%;
+
+            display: grid;
+
+            place-items: center;
+
+            font-size: 22px;
+
+        }
+
+
+        .captain-card h3 {
+
+            margin-top: 20px;
+
+            font-size: 19px;
+
+        }
+
+
+        .captain-card p {
+
+            margin-top: 5px;
+
+            color: #696970;
+
+            font-size: 9px;
+
+        }
+
+
+        .captain-card small {
+
+            display: block;
+
+            margin-top: 17px;
+
+            color: #777;
+
+            font-size: 8px;
+
+            letter-spacing: 1px;
+
+        }
+
+
+        .captain-yellow {
+
+            border-color:
+                rgba(255,212,0,0.4);
+
+        }
+
+
+        .captain-yellow .captain-icon {
+
+            background:
+                rgba(255,212,0,0.1);
+
+        }
+
+
+        .captain-yellow h3 {
+
+            color: var(--yellow);
+
+        }
+
+
+        .captain-red {
+
+            border-color:
+                rgba(255,48,56,0.4);
+
+        }
+
+
+        .captain-red .captain-icon {
+
+            background:
+                rgba(255,48,56,0.1);
+
+        }
+
+
+        .captain-red h3 {
+
+            color: var(--red);
+
+        }
+
+
+        .captain-green {
+
+            border-color:
+                rgba(50,201,40,0.4);
+
+        }
+
+
+        .captain-green .captain-icon {
+
+            background:
+                rgba(50,201,40,0.1);
+
+        }
+
+
+        .captain-green h3 {
+
+            color: var(--green);
+
+        }
+
+
+        .captain-blue {
+
+            border-color:
+                rgba(40,140,255,0.4);
+
+        }
+
+
+        .captain-blue .captain-icon {
+
+            background:
+                rgba(40,140,255,0.1);
+
+        }
+
+
+        .captain-blue h3 {
+
+            color: #398eff;
+
+        }
+
+
+        /* =====================================================
+           COUNCIL MESSAGE
+        ===================================================== */
+
+        .council-message {
+
+            margin-top: 85px;
+
+            padding: 50px;
+
+            position: relative;
+
+            overflow: hidden;
+
+            border:
+                1px solid
+                rgba(8,124,255,0.2);
+
+            border-radius: 15px;
+
+            background:
+
+                radial-gradient(
+                    circle at 80% 30%,
+                    rgba(8,124,255,0.12),
+                    transparent 35%
+                ),
+
+                #080809;
+
+        }
+
+
+        .council-message::before {
+
+            content: "“";
+
+            position: absolute;
+
+            top: -50px;
+
+            right: 40px;
+
+            color:
+                rgba(8,124,255,0.08);
+
+            font-family:
+                "Playfair Display",
+                serif;
+
+            font-size: 220px;
+
+        }
+
+
+        .council-message h2 {
+
+            position: relative;
+
+            max-width: 850px;
+
+            font-family:
+                "Playfair Display",
+                serif;
+
+            font-size: 42px;
+
+            line-height: 1.15;
+
+        }
+
+
+        .council-message h2 span {
+
+            color: var(--blue);
+
+            font-style: italic;
+
+        }
+
+
+        .council-message p {
+
+            position: relative;
+
+            max-width: 650px;
+
+            margin-top: 18px;
+
+            color: #77777e;
+
+            font-size: 11px;
+
+            line-height: 1.8;
+
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ===================================================== */
+
+        @media (max-width: 1100px) {
+
+            .members-grid {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+
+            }
+
+
+            .captains-grid {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+
+            }
+
+        }
+
+
+        @media (max-width: 850px) {
+
+            .top-leaders {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .leader-card {
+
+                grid-template-columns:
+                    160px 1fr;
+
+            }
+
+
+            .leader-photo {
+
+                width: 150px;
+
+                height: 220px;
+
+            }
+
+        }
+
+
+        @media (max-width: 600px) {
+
+            .council-page {
+
+                width: 90%;
+
+            }
+
+
+            .council-hero {
+
+                padding-top: 65px;
+
+            }
+
+
+            .council-hero h1 {
+
+                font-size: 50px;
+
+                letter-spacing: -2px;
+
+            }
+
+
+            .council-section-heading {
+
+                align-items: flex-start;
+
+                flex-direction: column;
+
+                gap: 12px;
+
+            }
+
+
+            .leader-card {
+
+                grid-template-columns: 1fr;
+
+                gap: 20px;
+
+            }
+
+
+            .leader-photo {
+
+                width: 100%;
+
+                height: 280px;
+
+            }
+
+
+            .members-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .captains-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .council-message {
+
+                padding: 30px;
+
+            }
+
+
+            .council-message h2 {
+
+                font-size: 32px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+
+        <!-- LOGO -->
+
+        <a
+            href="../index.html"
+            class="brand">
+
+            <img
+                src="../assets/logo/srms-logo.png"
+                alt="The Shriram Millennium School">
+
+        </a>
+
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="nav-menu">
+
+
+            <a
+                href="../index.html"
+                class="nav-link">
+
+                Home
+
+            </a>
+
+
+            <a
+                href="houses.html"
+                class="nav-link">
+
+                Houses
+
+            </a>
+
+
+            <a
+                href="student-voice.html"
+                class="nav-link">
+
+                Student Voice
+
+            </a>
+
+
+            <a
+                href="council.html"
+                class="nav-link active">
+
+                Student Council
+
+            </a>
+
+
+            <a
+                href="events.html"
+                class="nav-link">
+
+                Events
+
+            </a>
+
+
+            <a
+                href="gallery.html"
+                class="nav-link">
+
+                Gallery
+
+            </a>
+
+
+            <a
+                href="achievements.html"
+                class="nav-link">
+
+                Achievements
+
+            </a>
+
+
+            <a
+                href="about.html"
+                class="nav-link">
+
+                About Us
+
+            </a>
+
+        </nav>
+
+
+
+        <!-- STUDENT VOICE -->
+
+        <a
+            href="student-voice.html"
+            class="nav-voice-button">
+
+            Student Voice
+
+            <span class="nav-chat-icon">
+                ◌
+            </span>
+
+        </a>
+
+
+
+        <!-- MOBILE -->
+
+        <button
+            class="mobile-menu-button"
+            id="mobileMenuButton">
+
+            ☰
+
+        </button>
+
+    </div>
+
+
+
+    <!-- MOBILE MENU -->
+
+    <div
+        class="mobile-menu"
+        id="mobileMenu">
+
+
+        <a href="../index.html">
+            Home
+        </a>
+
+
+        <a href="houses.html">
+            Houses
+        </a>
+
+
+        <a href="student-voice.html">
+            Student Voice
+        </a>
+
+
+        <a href="council.html">
+            Student Council
+        </a>
+
+
+        <a href="events.html">
+            Events
+        </a>
+
+
+        <a href="gallery.html">
+            Gallery
+        </a>
+
+
+        <a href="achievements.html">
+            Achievements
+        </a>
+
+
+        <a href="about.html">
+            About Us
+        </a>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main>
+
+
+<div class="council-page">
+
+
+    <!-- =================================================
+         HERO
+    ================================================== -->
+
+    <section class="council-hero">
+
+
+        <div class="section-label">
+
+            STUDENT LEADERSHIP
+
+        </div>
+
+
+        <h1>
+
+            Leadership with
+
+            <span>
+                purpose.
+            </span>
+
+        </h1>
+
+
+        <p>
+
+            Meet the students who represent
+            the voice, spirit and aspirations
+            of The Shriram Millennium School.
+
+        </p>
+
+    </section>
+
+
+
+    <!-- =================================================
+         SENIOR LEADERS
+    ================================================== -->
+
+    <section class="council-section">
+
+
+        <div class="council-section-heading">
+
+
+            <div>
+
+                <div class="section-label">
+
+                    SCHOOL LEADERSHIP
+
+                </div>
+
+
+                <h2>
+
+                    Student Council Heads
+
+                </h2>
+
+            </div>
+
+
+            <div class="council-year">
+
+                2026–27
+
+            </div>
+
+        </div>
+
+
+
+        <div class="top-leaders">
+
+
+            <!-- HEAD BOY -->
+
+            <article class="leader-card">
+
+
+                <div class="leader-photo">
+
+                    <!-- Replace with actual image -->
+
+                    <span>
+                        HEAD BOY PHOTO
+                    </span>
+
+                    <!--
+
+                    <img
+                        src="../assets/council/head-boy.jpg"
+                        alt="Head Boy">
+
+                    -->
+
+                </div>
+
+
+
+                <div class="leader-info">
+
+
+                    <small>
+                        STUDENT COUNCIL
+                    </small>
+
+
+                    <h3>
+                        Head Boy
+                    </h3>
+
+
+                    <p>
+
+                        The Head Boy represents
+                        the student body and works
+                        closely with the Student
+                        Council and school leadership.
+
+                    </p>
+
+
+                    <div class="leader-role">
+
+                        SCHOOL LEADERSHIP
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- HEAD GIRL -->
+
+            <article class="leader-card">
+
+
+                <div class="leader-photo">
+
+                    <!-- Replace with actual image -->
+
+                    <span>
+                        HEAD GIRL PHOTO
+                    </span>
+
+                    <!--
+
+                    <img
+                        src="../assets/council/head-girl.jpg"
+                        alt="Head Girl">
+
+                    -->
+
+                </div>
+
+
+
+                <div class="leader-info">
+
+
+                    <small>
+                        STUDENT COUNCIL
+                    </small>
+
+
+                    <h3>
+                        Head Girl
+                    </h3>
+
+
+                    <p>
+
+                        The Head Girl works to
+                        represent student voices,
+                        support school initiatives
+                        and strengthen the council.
+
+                    </p>
+
+
+                    <div class="leader-role">
+
+                        SCHOOL LEADERSHIP
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         COUNCIL MEMBERS
+    ================================================== -->
+
+    <section class="members-section">
+
+
+        <div class="council-section-heading">
+
+
+            <div>
+
+                <div class="section-label">
+
+                    THE TEAM
+
+                </div>
+
+
+                <h2>
+
+                    Student Council Members
+
+                </h2>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="members-grid">
+
+
+            <!-- MEMBER 01 -->
+
+            <article class="member-card">
+
+
+                <div class="member-photo">
+
+                    <span>
+                        PHOTO
+                    </span>
+
+                </div>
+
+
+                <div class="member-info">
+
+                    <small>
+                        COUNCIL MEMBER
+                    </small>
+
+
+                    <h3>
+                        Council Member
+                    </h3>
+
+
+                    <p>
+                        Student Representative
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- MEMBER 02 -->
+
+            <article class="member-card">
+
+
+                <div class="member-photo">
+
+                    <span>
+                        PHOTO
+                    </span>
+
+                </div>
+
+
+                <div class="member-info">
+
+                    <small>
+                        COUNCIL MEMBER
+                    </small>
+
+
+                    <h3>
+                        Council Member
+                    </h3>
+
+
+                    <p>
+                        Student Representative
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- MEMBER 03 -->
+
+            <article class="member-card">
+
+
+                <div class="member-photo">
+
+                    <span>
+                        PHOTO
+                    </span>
+
+                </div>
+
+
+                <div class="member-info">
+
+                    <small>
+                        COUNCIL MEMBER
+                    </small>
+
+
+                    <h3>
+                        Council Member
+                    </h3>
+
+
+                    <p>
+                        Student Representative
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- MEMBER 04 -->
+
+            <article class="member-card">
+
+
+                <div class="member-photo">
+
+                    <span>
+                        PHOTO
+                    </span>
+
+                </div>
+
+
+                <div class="member-info">
+
+                    <small>
+                        COUNCIL MEMBER
+                    </small>
+
+
+                    <h3>
+                        Council Member
+                    </h3>
+
+
+                    <p>
+                        Student Representative
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         HOUSE CAPTAINS
+    ================================================== -->
+
+    <section class="captains-section">
+
+
+        <div class="council-section-heading">
+
+
+            <div>
+
+                <div class="section-label">
+
+                    HOUSE LEADERSHIP
+
+                </div>
+
+
+                <h2>
+
+                    House Captains
+
+                </h2>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="captains-grid">
+
+
+            <!-- SHAURYA -->
+
+            <article
+                class="captain-card captain-yellow">
+
+
+                <div class="captain-number">
+                    01 / YELLOW
+                </div>
+
+
+                <div class="captain-icon">
+                    🟨
+                </div>
+
+
+                <h3>
+                    Shaurya
+                </h3>
+
+
+                <p>
+                    House Captain
+                </p>
+
+
+                <small>
+                    COURAGE • LEADERSHIP
+                </small>
+
+            </article>
+
+
+
+            <!-- PRATIBHA -->
+
+            <article
+                class="captain-card captain-red">
+
+
+                <div class="captain-number">
+                    02 / RED
+                </div>
+
+
+                <div class="captain-icon">
+                    🟥
+                </div>
+
+
+                <h3>
+                    Pratibha
+                </h3>
+
+
+                <p>
+                    House Captain
+                </p>
+
+
+                <small>
+                    TALENT • CREATIVITY
+                </small>
+
+            </article>
+
+
+
+            <!-- SHAKTI -->
+
+            <article
+                class="captain-card captain-green">
+
+
+                <div class="captain-number">
+                    03 / GREEN
+                </div>
+
+
+                <div class="captain-icon">
+                    🟩
+                </div>
+
+
+                <h3>
+                    Shakti
+                </h3>
+
+
+                <p>
+                    House Captain
+                </p>
+
+
+                <small>
+                    STRENGTH • UNITY
+                </small>
+
+            </article>
+
+
+
+            <!-- PRATIGYA -->
+
+            <article
+                class="captain-card captain-blue">
+
+
+                <div class="captain-number">
+                    04 / BLUE
+                </div>
+
+
+                <div class="captain-icon">
+                    🟦
+                </div>
+
+
+                <h3>
+                    Pratigya
+                </h3>
+
+
+                <p>
+                    House Captain
+                </p>
+
+
+                <small>
+                    COMMITMENT • INTEGRITY
+                </small>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         COUNCIL MESSAGE
+    ================================================== -->
+
+    <section class="council-message">
+
+
+        <div class="section-label">
+
+            OUR RESPONSIBILITY
+
+        </div>
+
+
+        <h2>
+
+            Leadership isn't about
+            having the loudest voice.
+
+            <span>
+                It's about listening to every voice.
+            </span>
+
+        </h2>
+
+
+        <p>
+
+            The Student Council exists to create
+            a bridge between students, teachers
+            and the wider school community —
+            turning ideas into meaningful action.
+
+        </p>
+
+    </section>
+
+
+</div>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+
+    <div class="footer-inner">
+
+
+        <div class="footer-brand">
+
+            <img
+                src="../assets/logo/srms-logo.png"
+                alt="The Shriram Millennium School">
+
+        </div>
+
+
+        <div class="footer-center">
+
+            © 2026 The Shriram Millennium School
+
+            <span>|</span>
+
+            Student Council Portal
+
+        </div>
+
+
+        <div class="socials">
+
+            <span>
+                Connect with us
+            </span>
+
+
+            <a href="#">
+                ◎
+            </a>
+
+
+            <a href="#">
+                ▶
+            </a>
+
+
+            <a href="#">
+                𝕏
+            </a>
+
+
+            <a href="#">
+                in
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- MAIN JAVASCRIPT -->
+
+<script src="../script.js"></script>
+
+
+</body>
+
+</html>

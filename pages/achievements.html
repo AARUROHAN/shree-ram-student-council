@@ -1,0 +1,2360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Achievements | The Shriram Millennium School Student Council">
+
+    <title>
+        Achievements | The Shriram Millennium School
+    </title>
+
+
+    <!-- GOOGLE FONTS -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- MAIN CSS -->
+
+    <link
+        rel="stylesheet"
+        href="../style.css">
+
+
+    <style>
+
+        /* =====================================================
+           ACHIEVEMENTS PAGE
+        ===================================================== */
+
+        .achievements-page {
+
+            width: 94%;
+
+            max-width: 1450px;
+
+            margin: auto;
+
+            padding-bottom: 110px;
+
+        }
+
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .achievements-hero {
+
+            padding: 95px 0 65px;
+
+            max-width: 900px;
+
+        }
+
+
+        .achievements-hero h1 {
+
+            margin-top: 14px;
+
+            font-family:
+                "Playfair Display",
+                serif;
+
+            font-size:
+                clamp(55px, 6vw, 84px);
+
+            line-height: 0.98;
+
+            letter-spacing: -4px;
+
+        }
+
+
+        .achievements-hero h1 span {
+
+            color: var(--blue);
+
+            font-style: italic;
+
+        }
+
+
+        .achievements-hero p {
+
+            max-width: 680px;
+
+            margin-top: 25px;
+
+            color: var(--muted);
+
+            font-size: 15px;
+
+            line-height: 1.8;
+
+        }
+
+
+        /* =====================================================
+           ACHIEVEMENT STATS
+        ===================================================== */
+
+        .achievement-stats {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 12px;
+
+            margin-bottom: 75px;
+
+        }
+
+
+        .achievement-stat {
+
+            padding: 25px;
+
+            border:
+                1px solid
+                rgba(255,255,255,0.1);
+
+            border-radius: 11px;
+
+            background: #080808;
+
+        }
+
+
+        .achievement-stat-number {
+
+            font-family:
+                "Playfair Display",
+                serif;
+
+            font-size: 39px;
+
+            color: white;
+
+        }
+
+
+        .achievement-stat-label {
+
+            display: block;
+
+            margin-top: 6px;
+
+            color: var(--blue-light);
+
+            font-size: 8px;
+
+            font-weight: 700;
+
+            letter-spacing: 1.5px;
+
+        }
+
+
+        .achievement-stat-description {
+
+            display: block;
+
+            margin-top: 8px;
+
+            color: #5e5e65;
+
+            font-size: 8px;
+
+        }
+
+
+        /* =====================================================
+           HALL OF FAME HEADER
+        ===================================================== */
+
+        .hall-section {
+
+            margin-top: 20px;
+
+        }
+
+
+        .hall-heading {
+
+            display: flex;
+
+            align-items: flex-end;
+
+            justify-content: space-between;
+
+            margin-bottom: 25px;
+
+        }
+
+
+        .hall-heading h2 {
+
+            margin-top: 8px;
+
+            font-family:
+                "Playfair Display",
+                serif;
+
+            font-size: 46px;
+
+        }
+
+
+        .hall-heading h2 span {
+
+            color: var(--blue);
+
+            font-style: italic;
+
+        }
+
+
+        .hall-badge {
+
+            padding: 9px 13px;
+
+            border:
+                1px solid
+                rgba(255,255,255,0.12);
+
+            border-radius: 7px;
+
+            color: #77777e;
+
+            font-size: 8px;
+
+            font-weight: 700;
+
+            letter-spacing: 1px;
+
+        }
+
+
+        /* =====================================================
+           FEATURED ACHIEVEMENT
+        ===================================================== */
+
+        .featured-achievement {
+
+            min-height: 340px;
+
+            position: relative;
+
+            overflow: hidden;
+
+            padding: 40px;
+
+            display: grid;
+
+            grid-template-columns:
+                160px 1fr;
+
+            gap: 35px;
+
+            align-items: center;
+
+            border:
+                1px solid
+                rgba(255,212,0,0.25);
+
+            border-radius: 15px;
+
+            background:
+
+                radial-gradient(
+                    circle at 80% 30%,
+                    rgba(255,212,0,0.09),
+                    transparent 35%
+                ),
+
+                #080809;
+
+        }
+
+
+        .featured-achievement::after {
+
+            content: "★";
+
+            position: absolute;
+
+            right: 40px;
+
+            bottom: -45px;
+
+            color:
+                rgba(255,212,0,0.05);
+
+            font-size: 220px;
+
+        }
+
+
+        .achievement-trophy {
+
+            width: 145px;
+
+            height: 180px;
+
+            display: grid;
+
+            place-items: center;
+
+            border:
+                1px solid
+                rgba(255,212,0,0.25);
+
+            border-radius: 12px;
+
+            background:
+                rgba(255,212,0,0.04);
+
+            font-size: 65px;
+
+        }
+
+
+        .featured-achievement-content {
+
+            position: relative;
+
+            z-index: 2;
+
+        }
+
+
+        .featured-achievement-content small {
+
+            color: var(--yellow);
+
+            font-size: 8px;
+
+            font-weight: 700;
+
+            letter-spacing: 2px;
+
+        }
+
+
+        .featured-achievement-content h3 {
+
+            margin-top: 10px;
+
+            font-family:
+                "Playfair Display",
+                serif;
+
+            font-size: 39px;
+
+        }
+
+
+        .featured-achievement-content p {
+
+            max-width: 650px;
+
+            margin-top: 12px;
+
+            color: #77777e;
+
+            font-size: 10px;
+
+            line-height: 1.8;
+
+        }
+
+
+        .achievement-meta {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 9px;
+
+            margin-top: 20px;
+
+        }
+
+
+        .achievement-meta span {
+
+            padding: 7px 10px;
+
+            border:
+                1px solid
+                rgba(255,255,255,0.1);
+
+            border-radius: 6px;
+
+            color: #8c8c92;
+
+            font-size: 8px;
+
+        }
+
+
+        /* =====================================================
+           ACHIEVEMENT CARDS
+        ===================================================== */
+
+        .achievement-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 13px;
+
+            margin-top: 20px;
+
+        }
+
+
+        .achievement-card {
+
+            min-height: 280px;
+
+            position: relative;
+
+            overflow: hidden;
+
+            padding: 25px;
+
+            border:
+                1px solid
+                rgba(255,255,255,0.1);
+
+            border-radius: 11px;
+
+            background: #080808;
+
+            transition:
+                transform 0.25s ease,
+                border-color 0.25s ease;
+
+        }
+
+
+        .achievement-card:hover {
+
+            transform:
+                translateY(-5px);
+
+            border-color:
+                rgba(8,124,255,0.35);
+
+        }
+
+
+        .achievement-card-icon {
+
+            width: 48px;
+
+            height: 48px;
+
+            display: grid;
+
+            place-items: center;
+
+            border-radius: 10px;
+
+            background:
+                rgba(8,124,255,0.08);
+
+            color: var(--blue-light);
+
+            font-size: 21px;
+
+        }
+
+
+        .achievement-card small {
+
+            display: block;
+
+            margin-top: 28px;
+
+            color: var(--blue);
+
+            font-size: 7px;
+
+            font-weight: 700;
+
+            letter-spacing: 1.5px;
+
+        }
+
+
+        .achievement-card h3 {
+
+            margin-top: 7px;
+
+            font-family:
+                "Playfair Display",
+                serif;
+
+            font-size: 22px;
+
+        }
+
+
+        .achievement-card p {
+
+            margin-top: 8px;
+
+            color: #68686f;
+
+            font-size: 9px;
+
+            line-height: 1.7;
+
+        }
+
+
+        .achievement-year {
+
+            position: absolute;
+
+            top: 24px;
+
+            right: 22px;
+
+            color: #4e4e54;
+
+            font-size: 8px;
+
+            letter-spacing: 1px;
+
+        }
+
+
+        /* =====================================================
+           HOUSE ACHIEVEMENTS
+        ===================================================== */
+
+        .house-achievements {
+
+            margin-top: 90px;
+
+        }
+
+
+        .house-achievement-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            gap: 12px;
+
+            margin-top: 25px;
+
+        }
+
+
+        .house-achievement-card {
+
+            min-height: 270px;
+
+            padding: 23px;
+
+            position: relative;
+
+            overflow: hidden;
+
+            border: 1px solid;
+
+            border-radius: 11px;
+
+            background: #080808;
+
+        }
+
+
+        .house-achievement-card::before {
+
+            content: "";
+
+            position: absolute;
+
+            top: 0;
+
+            left: 0;
+
+            width: 100%;
+
+            height: 4px;
+
+        }
+
+
+        .house-achievement-card.yellow {
+
+            border-color:
+                rgba(255,212,0,0.3);
+
+        }
+
+
+        .house-achievement-card.yellow::before {
+
+            background: var(--yellow);
+
+        }
+
+
+        .house-achievement-card.red {
+
+            border-color:
+                rgba(255,48,56,0.3);
+
+        }
+
+
+        .house-achievement-card.red::before {
+
+            background: var(--red);
+
+        }
+
+
+        .house-achievement-card.green {
+
+            border-color:
+                rgba(50,201,40,0.3);
+
+        }
+
+
+        .house-achievement-card.green::before {
+
+            background: var(--green);
+
+        }
+
+
+        .house-achievement-card.blue {
+
+            border-color:
+                rgba(57,142,255,0.3);
+
+        }
+
+
+        .house-achievement-card.blue::before {
+
+            background: #398eff;
+
+        }
+
+
+        .house-achievement-icon {
+
+            font-size: 30px;
+
+        }
+
+
+        .house-achievement-card h3 {
+
+            margin-top: 28px;
+
+            font-size: 20px;
+
+        }
+
+
+        .house-achievement-card p {
+
+            margin-top: 7px;
+
+            color: #696970;
+
+            font-size: 8px;
+
+            line-height: 1.7;
+
+        }
+
+
+        .house-achievement-points {
+
+            position: absolute;
+
+            bottom: 20px;
+
+            left: 23px;
+
+            right: 23px;
+
+            padding-top: 12px;
+
+            border-top:
+                1px solid
+                rgba(255,255,255,0.07);
+
+            color: #77777e;
+
+            font-size: 8px;
+
+        }
+
+
+        /* =====================================================
+           TIMELINE
+        ===================================================== */
+
+        .achievement-timeline {
+
+            margin-top: 95px;
+
+        }
+
+
+        .timeline {
+
+            position: relative;
+
+            margin-top: 30px;
+
+            padding-left: 35px;
+
+        }
+
+
+        .timeline::before {
+
+            content: "";
+
+            position: absolute;
+
+            top: 0;
+
+            bottom: 0;
+
+            left: 7px;
+
+            width: 1px;
+
+            background:
+                rgba(255,255,255,0.12);
+
+        }
+
+
+        .timeline-item {
+
+            position: relative;
+
+            padding-bottom: 38px;
+
+        }
+
+
+        .timeline-item:last-child {
+
+            padding-bottom: 0;
+
+        }
+
+
+        .timeline-dot {
+
+            position: absolute;
+
+            left: -33px;
+
+            top: 2px;
+
+            width: 15px;
+
+            height: 15px;
+
+            border:
+                3px solid #050505;
+
+            border-radius: 50%;
+
+            background: var(--blue);
+
+            box-shadow:
+                0 0 0 1px
+                rgba(8,124,255,0.4);
+
+        }
+
+
+        .timeline-year {
+
+            color: var(--blue-light);
+
+            font-size: 8px;
+
+            font-weight: 700;
+
+            letter-spacing: 1.5px;
+
+        }
+
+
+        .timeline-item h3 {
+
+            margin-top: 7px;
+
+            font-family:
+                "Playfair Display",
+                serif;
+
+            font-size: 23px;
+
+        }
+
+
+        .timeline-item p {
+
+            max-width: 700px;
+
+            margin-top: 6px;
+
+            color: #696970;
+
+            font-size: 9px;
+
+            line-height: 1.7;
+
+        }
+
+
+        /* =====================================================
+           STUDENT ACHIEVEMENT
+        ===================================================== */
+
+        .student-achievements {
+
+            margin-top: 95px;
+
+        }
+
+
+        .student-achievement-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 12px;
+
+            margin-top: 25px;
+
+        }
+
+
+        .student-achievement-card {
+
+            padding: 22px;
+
+            border:
+                1px solid
+                rgba(255,255,255,0.09);
+
+            border-radius: 10px;
+
+            background: #080808;
+
+        }
+
+
+        .student-achievement-top {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+        }
+
+
+        .student-avatar {
+
+            width: 43px;
+
+            height: 43px;
+
+            display: grid;
+
+            place-items: center;
+
+            border-radius: 50%;
+
+            background:
+                rgba(8,124,255,0.1);
+
+            color: var(--blue-light);
+
+        }
+
+
+        .student-achievement-top span {
+
+            color: #55555c;
+
+            font-size: 8px;
+
+        }
+
+
+        .student-achievement-card h3 {
+
+            margin-top: 18px;
+
+            font-size: 15px;
+
+        }
+
+
+        .student-achievement-card p {
+
+            margin-top: 5px;
+
+            color: #68686f;
+
+            font-size: 9px;
+
+        }
+
+
+        .student-achievement-card small {
+
+            display: block;
+
+            margin-top: 15px;
+
+            color: var(--blue);
+
+            font-size: 7px;
+
+            font-weight: 700;
+
+            letter-spacing: 1px;
+
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ===================================================== */
+
+        @media (max-width: 1100px) {
+
+            .achievement-stats {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+
+            }
+
+
+            .achievement-grid {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+
+            }
+
+
+            .house-achievement-grid {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+
+            }
+
+
+            .student-achievement-grid {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+
+            }
+
+        }
+
+
+        @media (max-width: 750px) {
+
+            .achievements-page {
+
+                width: 90%;
+
+            }
+
+
+            .achievements-hero {
+
+                padding-top: 65px;
+
+            }
+
+
+            .achievements-hero h1 {
+
+                font-size: 50px;
+
+                letter-spacing: -2px;
+
+            }
+
+
+            .achievement-stats {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .hall-heading {
+
+                align-items: flex-start;
+
+                flex-direction: column;
+
+                gap: 12px;
+
+            }
+
+
+            .hall-heading h2 {
+
+                font-size: 38px;
+
+            }
+
+
+            .featured-achievement {
+
+                grid-template-columns: 1fr;
+
+                padding: 25px;
+
+            }
+
+
+            .achievement-trophy {
+
+                width: 100px;
+
+                height: 110px;
+
+            }
+
+
+            .featured-achievement-content h3 {
+
+                font-size: 30px;
+
+            }
+
+
+            .achievement-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .house-achievement-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+
+            .student-achievement-grid {
+
+                grid-template-columns: 1fr;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+
+        <!-- LOGO -->
+
+        <a
+            href="../index.html"
+            class="brand">
+
+            <img
+                src="../assets/logo/srms-logo.png"
+                alt="The Shriram Millennium School">
+
+        </a>
+
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="nav-menu">
+
+
+            <a
+                href="../index.html"
+                class="nav-link">
+
+                Home
+
+            </a>
+
+
+            <a
+                href="houses.html"
+                class="nav-link">
+
+                Houses
+
+            </a>
+
+
+            <a
+                href="student-voice.html"
+                class="nav-link">
+
+                Student Voice
+
+            </a>
+
+
+            <a
+                href="council.html"
+                class="nav-link">
+
+                Student Council
+
+            </a>
+
+
+            <a
+                href="events.html"
+                class="nav-link">
+
+                Events
+
+            </a>
+
+
+            <a
+                href="gallery.html"
+                class="nav-link">
+
+                Gallery
+
+            </a>
+
+
+            <a
+                href="achievements.html"
+                class="nav-link active">
+
+                Achievements
+
+            </a>
+
+
+            <a
+                href="about.html"
+                class="nav-link">
+
+                About Us
+
+            </a>
+
+        </nav>
+
+
+
+        <!-- STUDENT VOICE -->
+
+        <a
+            href="student-voice.html"
+            class="nav-voice-button">
+
+            Student Voice
+
+            <span class="nav-chat-icon">
+                ◌
+            </span>
+
+        </a>
+
+
+
+        <!-- MOBILE -->
+
+        <button
+            class="mobile-menu-button"
+            id="mobileMenuButton">
+
+            ☰
+
+        </button>
+
+    </div>
+
+
+
+    <!-- MOBILE MENU -->
+
+    <div
+        class="mobile-menu"
+        id="mobileMenu">
+
+
+        <a href="../index.html">
+            Home
+        </a>
+
+
+        <a href="houses.html">
+            Houses
+        </a>
+
+
+        <a href="student-voice.html">
+            Student Voice
+        </a>
+
+
+        <a href="council.html">
+            Student Council
+        </a>
+
+
+        <a href="events.html">
+            Events
+        </a>
+
+
+        <a href="gallery.html">
+            Gallery
+        </a>
+
+
+        <a href="achievements.html">
+            Achievements
+        </a>
+
+
+        <a href="about.html">
+            About Us
+        </a>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     MAIN
+===================================================== -->
+
+<main>
+
+
+<div class="achievements-page">
+
+
+    <!-- =================================================
+         HERO
+    ================================================== -->
+
+    <section class="achievements-hero">
+
+
+        <div class="section-label">
+
+            HALL OF FAME
+
+        </div>
+
+
+        <h1>
+
+            Excellence worth
+
+            <span>
+                remembering.
+            </span>
+
+        </h1>
+
+
+        <p>
+
+            Celebrating the achievements,
+            milestones and moments that make
+            our student community proud.
+
+        </p>
+
+    </section>
+
+
+
+    <!-- =================================================
+         STATS
+    ================================================== -->
+
+    <section class="achievement-stats">
+
+
+        <div class="achievement-stat">
+
+            <span class="achievement-stat-number">
+                50+
+            </span>
+
+            <span class="achievement-stat-label">
+                ACHIEVEMENTS
+            </span>
+
+            <span class="achievement-stat-description">
+                Across school activities
+            </span>
+
+        </div>
+
+
+        <div class="achievement-stat">
+
+            <span class="achievement-stat-number">
+                4
+            </span>
+
+            <span class="achievement-stat-label">
+                HOUSE CHAMPIONS
+            </span>
+
+            <span class="achievement-stat-description">
+                Four houses, one spirit
+            </span>
+
+        </div>
+
+
+        <div class="achievement-stat">
+
+            <span class="achievement-stat-number">
+                20+
+            </span>
+
+            <span class="achievement-stat-label">
+                EVENTS
+            </span>
+
+            <span class="achievement-stat-description">
+                Every academic year
+            </span>
+
+        </div>
+
+
+        <div class="achievement-stat">
+
+            <span class="achievement-stat-number">
+                1000+
+            </span>
+
+            <span class="achievement-stat-label">
+                STUDENTS
+            </span>
+
+            <span class="achievement-stat-description">
+                Growing together
+            </span>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         FEATURED ACHIEVEMENT
+    ================================================== -->
+
+    <section class="hall-section">
+
+
+        <div class="hall-heading">
+
+
+            <div>
+
+                <div class="section-label">
+                    FEATURED
+                </div>
+
+
+                <h2>
+
+                    Our proudest
+
+                    <span>
+                        moment.
+                    </span>
+
+                </h2>
+
+            </div>
+
+
+            <div class="hall-badge">
+
+                HALL OF FAME
+
+            </div>
+
+        </div>
+
+
+
+        <div class="featured-achievement">
+
+
+            <div class="achievement-trophy">
+
+                🏆
+
+            </div>
+
+
+            <div class="featured-achievement-content">
+
+
+                <small>
+                    HOUSE CHAMPIONSHIP
+                </small>
+
+
+                <h3>
+                    Shaurya House
+                </h3>
+
+
+                <p>
+
+                    Recognising exceptional participation,
+                    teamwork and leadership throughout
+                    the championship season.
+
+                    <br><br>
+
+                    This achievement represents the
+                    collective effort of students,
+                    captains and house members.
+
+                </p>
+
+
+                <div class="achievement-meta">
+
+                    <span>
+                        🥇 1st Place
+                    </span>
+
+                    <span>
+                        2,450 Points
+                    </span>
+
+                    <span>
+                        2026–27
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         ACHIEVEMENT CATEGORIES
+    ================================================== -->
+
+    <section class="hall-section">
+
+
+        <div class="hall-heading">
+
+
+            <div>
+
+                <div class="section-label">
+                    CATEGORIES
+                </div>
+
+
+                <h2>
+
+                    Every achievement
+
+                    <span>
+                        matters.
+                    </span>
+
+                </h2>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="achievement-grid">
+
+
+            <!-- CARD 1 -->
+
+            <article class="achievement-card">
+
+
+                <span class="achievement-year">
+                    2026
+                </span>
+
+
+                <div class="achievement-card-icon">
+                    🏆
+                </div>
+
+
+                <small>
+                    SPORTS
+                </small>
+
+
+                <h3>
+                    Sporting Excellence
+                </h3>
+
+
+                <p>
+
+                    Celebrating students who
+                    demonstrate commitment,
+                    teamwork and sportsmanship.
+
+                </p>
+
+            </article>
+
+
+
+            <!-- CARD 2 -->
+
+            <article class="achievement-card">
+
+
+                <span class="achievement-year">
+                    2026
+                </span>
+
+
+                <div class="achievement-card-icon">
+                    📚
+                </div>
+
+
+                <small>
+                    ACADEMICS
+                </small>
+
+
+                <h3>
+                    Academic Excellence
+                </h3>
+
+
+                <p>
+
+                    Recognising outstanding
+                    academic performance and
+                    a commitment to learning.
+
+                </p>
+
+            </article>
+
+
+
+            <!-- CARD 3 -->
+
+            <article class="achievement-card">
+
+
+                <span class="achievement-year">
+                    2026
+                </span>
+
+
+                <div class="achievement-card-icon">
+                    🎨
+                </div>
+
+
+                <small>
+                    CULTURAL
+                </small>
+
+
+                <h3>
+                    Creative Achievement
+                </h3>
+
+
+                <p>
+
+                    Celebrating creativity,
+                    artistic expression and
+                    cultural participation.
+
+                </p>
+
+            </article>
+
+
+
+            <!-- CARD 4 -->
+
+            <article class="achievement-card">
+
+
+                <span class="achievement-year">
+                    2026
+                </span>
+
+
+                <div class="achievement-card-icon">
+                    👑
+                </div>
+
+
+                <small>
+                    LEADERSHIP
+                </small>
+
+
+                <h3>
+                    Student Leadership
+                </h3>
+
+
+                <p>
+
+                    Recognising students who
+                    lead with responsibility,
+                    empathy and purpose.
+
+                </p>
+
+            </article>
+
+
+
+            <!-- CARD 5 -->
+
+            <article class="achievement-card">
+
+
+                <span class="achievement-year">
+                    2026
+                </span>
+
+
+                <div class="achievement-card-icon">
+                    💡
+                </div>
+
+
+                <small>
+                    INNOVATION
+                </small>
+
+
+                <h3>
+                    Innovation & Ideas
+                </h3>
+
+
+                <p>
+
+                    Celebrating students who
+                    turn creative ideas into
+                    meaningful solutions.
+
+                </p>
+
+            </article>
+
+
+
+            <!-- CARD 6 -->
+
+            <article class="achievement-card">
+
+
+                <span class="achievement-year">
+                    2026
+                </span>
+
+
+                <div class="achievement-card-icon">
+                    🤝
+                </div>
+
+
+                <small>
+                    COMMUNITY
+                </small>
+
+
+                <h3>
+                    Community Impact
+                </h3>
+
+
+                <p>
+
+                    Recognising contributions
+                    that make our school
+                    community stronger.
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         HOUSE ACHIEVEMENTS
+    ================================================== -->
+
+    <section class="house-achievements">
+
+
+        <div class="hall-heading">
+
+
+            <div>
+
+                <div class="section-label">
+                    HOUSE HONOURS
+                </div>
+
+
+                <h2>
+
+                    Four colours.
+
+                    <span>
+                        Four stories.
+                    </span>
+
+                </h2>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="house-achievement-grid">
+
+
+            <!-- SHAURYA -->
+
+            <article
+                class="house-achievement-card yellow">
+
+
+                <div class="house-achievement-icon">
+                    🟨
+                </div>
+
+
+                <h3>
+                    Shaurya
+                </h3>
+
+
+                <p>
+
+                    Leading the current
+                    championship with strong
+                    participation across events.
+
+                </p>
+
+
+                <div class="house-achievement-points">
+
+                    CURRENT POINTS
+                    <strong>
+                        2,450
+                    </strong>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PRATIBHA -->
+
+            <article
+                class="house-achievement-card red">
+
+
+                <div class="house-achievement-icon">
+                    🟥
+                </div>
+
+
+                <h3>
+                    Pratibha
+                </h3>
+
+
+                <p>
+
+                    Known for creative expression,
+                    cultural participation and
+                    student talent.
+
+                </p>
+
+
+                <div class="house-achievement-points">
+
+                    CURRENT POINTS
+                    <strong>
+                        2,210
+                    </strong>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- SHAKTI -->
+
+            <article
+                class="house-achievement-card green">
+
+
+                <div class="house-achievement-icon">
+                    🟩
+                </div>
+
+
+                <h3>
+                    Shakti
+                </h3>
+
+
+                <p>
+
+                    Building momentum through
+                    teamwork, sports and
+                    community participation.
+
+                </p>
+
+
+                <div class="house-achievement-points">
+
+                    CURRENT POINTS
+                    <strong>
+                        1,980
+                    </strong>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PRATIGYA -->
+
+            <article
+                class="house-achievement-card blue">
+
+
+                <div class="house-achievement-icon">
+                    🟦
+                </div>
+
+
+                <h3>
+                    Pratigya
+                </h3>
+
+
+                <p>
+
+                    Representing commitment,
+                    discipline and determination
+                    across school activities.
+
+                </p>
+
+
+                <div class="house-achievement-points">
+
+                    CURRENT POINTS
+                    <strong>
+                        1,850
+                    </strong>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         TIMELINE
+    ================================================== -->
+
+    <section class="achievement-timeline">
+
+
+        <div class="hall-heading">
+
+
+            <div>
+
+                <div class="section-label">
+                    OUR JOURNEY
+                </div>
+
+
+                <h2>
+
+                    Milestones along
+
+                    <span>
+                        the way.
+                    </span>
+
+                </h2>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="timeline">
+
+
+            <article class="timeline-item">
+
+
+                <div class="timeline-dot"></div>
+
+
+                <div class="timeline-year">
+                    2026 — 27
+                </div>
+
+
+                <h3>
+                    A New Student Council Year
+                </h3>
+
+
+                <p>
+
+                    A new group of student leaders
+                    begins the journey of representing
+                    student voices and creating
+                    meaningful initiatives.
+
+                </p>
+
+            </article>
+
+
+
+            <article class="timeline-item">
+
+
+                <div class="timeline-dot"></div>
+
+
+                <div class="timeline-year">
+                    2026
+                </div>
+
+
+                <h3>
+                    Student Voice Initiative
+                </h3>
+
+
+                <p>
+
+                    Launching a dedicated platform
+                    where students can share ideas,
+                    concerns and feedback with
+                    the Student Council.
+
+                </p>
+
+            </article>
+
+
+
+            <article class="timeline-item">
+
+
+                <div class="timeline-dot"></div>
+
+
+                <div class="timeline-year">
+                    2025 — 26
+                </div>
+
+
+                <h3>
+                    House Championship
+                </h3>
+
+
+                <p>
+
+                    Students competed across
+                    academic, sporting, cultural
+                    and leadership activities.
+
+                </p>
+
+            </article>
+
+
+
+            <article class="timeline-item">
+
+
+                <div class="timeline-dot"></div>
+
+
+                <div class="timeline-year">
+                    CONTINUING
+                </div>
+
+
+                <h3>
+                    Building a Stronger Community
+                </h3>
+
+
+                <p>
+
+                    Every event, idea and student
+                    contribution becomes part of
+                    the school's continuing story.
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         STUDENT ACHIEVEMENTS
+    ================================================== -->
+
+    <section class="student-achievements">
+
+
+        <div class="hall-heading">
+
+
+            <div>
+
+                <div class="section-label">
+                    STUDENT SPOTLIGHT
+                </div>
+
+
+                <h2>
+
+                    Celebrating our
+
+                    <span>
+                        students.
+                    </span>
+
+                </h2>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="student-achievement-grid">
+
+
+            <article class="student-achievement-card">
+
+
+                <div class="student-achievement-top">
+
+                    <div class="student-avatar">
+                        ★
+                    </div>
+
+                    <span>
+                        2026
+                    </span>
+
+                </div>
+
+
+                <h3>
+                    Student Achievement
+                </h3>
+
+
+                <p>
+                    Student Name
+                </p>
+
+
+                <small>
+                    ACADEMIC EXCELLENCE
+                </small>
+
+            </article>
+
+
+
+            <article class="student-achievement-card">
+
+
+                <div class="student-achievement-top">
+
+                    <div class="student-avatar">
+                        🏆
+                    </div>
+
+                    <span>
+                        2026
+                    </span>
+
+                </div>
+
+
+                <h3>
+                    Student Achievement
+                </h3>
+
+
+                <p>
+                    Student Name
+                </p>
+
+
+                <small>
+                    SPORTS
+                </small>
+
+            </article>
+
+
+
+            <article class="student-achievement-card">
+
+
+                <div class="student-achievement-top">
+
+                    <div class="student-avatar">
+                        ✦
+                    </div>
+
+                    <span>
+                        2026
+                    </span>
+
+                </div>
+
+
+                <h3>
+                    Student Achievement
+                </h3>
+
+
+                <p>
+                    Student Name
+                </p>
+
+
+                <small>
+                    LEADERSHIP
+                </small>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+</div>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+
+    <div class="footer-inner">
+
+
+        <div class="footer-brand">
+
+            <img
+                src="../assets/logo/srms-logo.png"
+                alt="The Shriram Millennium School">
+
+        </div>
+
+
+        <div class="footer-center">
+
+            © 2026 The Shriram Millennium School
+
+            <span>|</span>
+
+            Student Council Portal
+
+        </div>
+
+
+        <div class="socials">
+
+            <span>
+                Connect with us
+            </span>
+
+
+            <a href="#">
+                ◎
+            </a>
+
+
+            <a href="#">
+                ▶
+            </a>
+
+
+            <a href="#">
+                𝕏
+            </a>
+
+
+            <a href="#">
+                in
+            </a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- MAIN JAVASCRIPT -->
+
+<script src="../script.js"></script>
+
+
+</body>
+
+</html>
